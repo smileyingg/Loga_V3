@@ -29,10 +29,12 @@
     if (ck.checked == true) {
       document.getElementById('txt_q1_c5').style.display = "";
       document.getElementById('txt_q1_c5').focus();
+      document.getElementById('txt_q1_c5').required = true;
 
     } else {
       document.getElementById('txt_q1_c5').style.display = "none";
       document.getElementById('txt_q1_c5').value = "";
+      document.getElementById('txt_q1_c5').required = false;
     }
   }
 
@@ -48,9 +50,11 @@
     if (ck.checked == true) {
       document.getElementById('txt_q2_c7').style.display = "";
       document.getElementById('txt_q2_c7').focus();
+      document.getElementById('txt_q2_c7').required = true;
     } else {
       document.getElementById('txt_q2_c7').style.display = "none";
       document.getElementById('txt_q2_c7').value = "";
+      document.getElementById('txt_q2_c7').required = false;
     }
   }
 </script>
@@ -141,9 +145,12 @@
     if (ck.checked == true) {
       document.getElementById('txt_q4_c5').style.display = "";
       document.getElementById('txt_q4_c5').focus();
+      document.getElementById('txt_q4_c5').required = true;
+
     } else {
       document.getElementById('txt_q4_c5').style.display = "none";
       document.getElementById('txt_q4_c5').value = "";
+      document.getElementById('txt_q4_c5').required = false;
     }
   }
 
@@ -192,9 +199,12 @@
     if (ck.checked == true) {
       document.getElementById('txt_q6_c4').style.display = "";
       document.getElementById('txt_q6_c4').focus();
+      document.getElementById('txt_q6_c4').required = true;
+
     } else {
       document.getElementById('txt_q6_c4').style.display = "none";
       document.getElementById('txt_q6_c4').value = "";
+      document.getElementById('txt_q6_c4').required = false;
     }
   }
 
@@ -220,9 +230,11 @@
     if (ck.checked == true) {
       document.getElementById('txt_q7_c5').style.display = "";
       document.getElementById('txt_q7_c5').focus();
+      document.getElementById('txt_q7_c5').required = true;
     } else {
       document.getElementById('txt_q7_c5').style.display = "none";
       document.getElementById('txt_q7_c5').value = "";
+      document.getElementById('txt_q7_c5').required = false;
     }
   }
 
@@ -248,9 +260,11 @@
     if (ck.checked == true) {
       document.getElementById('txt_q8_c4').style.display = "";
       document.getElementById('txt_q8_c4').focus();
+      document.getElementById('txt_q8_c4').required = true;
     } else {
       document.getElementById('txt_q8_c4').style.display = "none";
       document.getElementById('txt_q8_c4').value = "";
+      document.getElementById('txt_q8_c4').required = false;
     }
   }
   // End Q8
