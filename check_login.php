@@ -1,18 +1,28 @@
 <?php
 	session_start();
-	header('Content-type: text/html; charset=utf-8');
-	include 'head.php';
-	include 'configdb.php';
-	$username =	$_POST['txtUsername'];
-	$password = $_POST['txtPassword'];
-	$strSQL = "SELECT * FROM member WHERE username = '$username'AND pass = '$password'";
- 	$result = mysqli_query($conn, $strSQL);
-	$row = mysqli_fetch_assoc($result);
-	if (!$row) {
-				 echo "<script>window.location = './admin_login.php';</script>";
-	} else {
-		//สร้าง SESSION เพื่อใช้ในหน้าอื่น ที่ต้องการตรวจสอบข้อมูลผู้ใช้ในขณะนั้น
-		$_SESSION["user_id"]   = $row["user_id"];
+  include 'configdb.php';
+	$strSQL = "SELECT * FROM member WHERE username ='$_POST[txtUsername]'AND pass = '$_POST[txtPassword]'";
+	$objQuery = mysqli_query($conn,$strSQL);
+	$objResult = mysqli_fetch_assoc($objQuery);
+	if(!$objResult)
+	{
+			echo "Username and Password Incorrect!";
 	}
-	
+	else
+	{
+			$_SESSION["user_id"] = $objResult["user_id"];
+			$_SESSION["status"] = $objResult["status"];
+
+			session_write_close();
+			
+			if($objResult["status"] == "admin")
+			{
+				header("location:test_admin_page.php");
+			}
+			else
+			{
+				header("location:test_form_login.php");
+			}
+	}
+	mysql_close();
 ?>

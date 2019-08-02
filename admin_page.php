@@ -1,4 +1,17 @@
-<?php require "check_login.php"; ?>
+<?php
+	session_start();
+	if($_SESSION['user_id'] == "")
+	{
+		echo "Please Login!";
+		exit();
+	}
+
+	if($_SESSION['status'] != "admin")
+	{
+		echo "This page for Admin only!";
+		exit();
+	}	
+?>
 <!DOCTYPE html>
 <html>
 <?php
@@ -14,6 +27,7 @@ include('configdb.php');
 
 <body>
   <?php
+
   $query = "SELECT * FROM answers order by id desc";
   $result = mysqli_query($conn, $query);
   ?>
@@ -63,7 +77,7 @@ include('configdb.php');
         echo "<td>" . $row["q5"] .  "</td> ";
         echo "<td>" . $row["q6"] .  "</td> ";
         echo "<td>" . $row["detail_q6"] .  "</td> ";
-        echo "<td>" . $row["q7"] .  "</td> ";  
+        echo "<td>" . $row["q7"] .  "</td> ";
         echo "<td>" . $row["detail_q7"] .  "</td> ";
         echo "<td>" . $row["q8"] .  "</td> ";
         echo "<td>" . $row["detail_q8"] .  "</td> ";
@@ -75,6 +89,7 @@ include('configdb.php');
       }
       echo "</table>";
       mysqli_close($conn);
+
       ?>
   </div>
   <script>
@@ -110,17 +125,16 @@ include('configdb.php');
       bottom: .5em;
     }
   </style>
+
+
+  <script>
+    function exportExcel() {
+      window.location = './exportExcel.php';
+    }//  return confirm('คุณต้องการลบข้อมูลแถวนี้ใช่หรือไม่? !!!');
+
+  </script>
+
+
 </body>
 
 </html>
-
-
-
-
-
-
-<script type="text/javascript">
-  function exportExcel() {
-    window.location = './exportExcel.php';
-  }
-</script>
