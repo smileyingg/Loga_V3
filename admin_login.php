@@ -14,7 +14,7 @@
       <h3>Admin Login</h3>
     </div>
 
-    <form id="form_login" method="POST" style="padding:20px;" action="admin_page.php">
+    <form id="form_login" method="POST" style="padding:20px;" action="check_login.php">
       <div class=" form-group" style="text-align: left;">
         <label for="">Username</label>
         <input type="text" class="form-control" id="txtUsername" name="txtUsername" placeholder="Username" style="width:340px" required>

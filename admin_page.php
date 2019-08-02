@@ -1,16 +1,17 @@
 <?php
-	session_start();
-	if($_SESSION['user_id'] == "")
-	{
-		echo "Please Login!";
-		exit();
-	}
+session_start();
+if ($_SESSION['user_id'] == "") {
+  echo "<script type=\"text/javascript\">";
+  echo "alert(\"Please Login!\");";
+  echo "window.history.back();";
+  echo "</script>";
 
-	if($_SESSION['status'] != "admin")
-	{
-		echo "This page for Admin only!";
-		exit();
-	}	
+  exit();
+}
+if ($_SESSION['status'] != "admin") {
+  echo "This page for Admin only!";
+  exit();
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -84,7 +85,7 @@ include('configdb.php');
         echo "<td>" . $row["email"] .  "</td> ";
         echo "<td>" . $row["tel"] .  "</td> ";
         //ลบข้อมูล
-        echo "<td style='text-align: center;'><a href='admin_del.php?id=$row[0]' onclick=\"return confirm('คุณต้องการลบข้อมูลแถวนี้ใช่หรือไม่? !!!')\"><img src='assets/images/bin.png' style='width:25px;heigth:25px;' /></a></td> ";
+        echo "<td style='text-align: center;'><a href='admin_del.php?id=$row[0]'onclick=\"return confirm('คุณต้องการลบข้อมูลแถวนี้ใช่หรือไม่? !!!')\"><img src='assets/images/bin.png' style='width:25px;heigth:25px;' /></a></td> ";
         echo "</tr>";
       }
       echo "</table>";
@@ -130,8 +131,7 @@ include('configdb.php');
   <script>
     function exportExcel() {
       window.location = './exportExcel.php';
-    }//  return confirm('คุณต้องการลบข้อมูลแถวนี้ใช่หรือไม่? !!!');
-
+    } //  return confirm('คุณต้องการลบข้อมูลแถวนี้ใช่หรือไม่? !!!');
   </script>
 
 
