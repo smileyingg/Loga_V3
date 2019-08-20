@@ -12,7 +12,7 @@
   <?php include 'header.php'; ?>
   <div class="container-fluid">
     <div class="col s12">
-      <h4 style="text-align:center;">ร่วมทำแบบสำรวจเพียง 3 นาที ลุ้นเข้าร่วมงานสัมมนาฟรี!</h4>
+      <h4 style="text-align:center;">ร่วมทำแบบสำรวจเพียง 3 นาที ลุ้นรับของที่ระลึก</h4>
       <h4 style="text-align:center;">สัมมนาเพื่อกิจการเกี่ยวกับธุรกิจความงาม</h4><br />
       <h5 style="margin-left:20px;">โปรดเลือกเพียงคำตอบที่ตรงกับสภาพกิจการท่านมากที่สุด เพียงคำตอบเดียว</h5>
       <div class="card">
@@ -109,7 +109,7 @@
             <h5>3. ทำเลที่ตั้ง <span class="required" style="color:red;">*</span></h5>
           </div>
 
-           <!-- Choice Q3. -->
+          <!-- Choice Q3. -->
           <div class="card-body">
             <div class="container">
               <p>กรุณาเลือกจังหวัด</p>
@@ -134,7 +134,7 @@
             </div>
           </div>
           <!-- End Q3. -->
-          
+
           <!-- Q4. -->
           <div class="card-header">
             <h5>4. สถานที่ <span class="required" style="color:red;">*</span></h5>
@@ -180,35 +180,35 @@
           <div class="card-body">
             <label class="container">
               <p>เจ้าของกิจการ/ผู้บริหาร</p>
-              <input class="moreTwo" type="checkbox" id="q5_c1" name="q5[]"  onClick="just2_q5();" value="เจ้าของกิจการ/ผู้บริหาร" >
+              <input class="moreTwo" type="checkbox" id="q5_c1" name="q5[]" onClick="just2_q5();" value="เจ้าของกิจการ/ผู้บริหาร">
               <span class="checkmark"></span>
             </label>
             <label class="container">
               <p>พนักงานออฟฟิศ</p>
-              <input class="moreTwo" type="checkbox" id="q5_c2" name="q5[]" onClick="just2_q5();" value="พนักงานออฟฟิศ" >
+              <input class="moreTwo" type="checkbox" id="q5_c2" name="q5[]" onClick="just2_q5();" value="พนักงานออฟฟิศ">
               <span class="checkmark"></span>
             </label>
             <label class="container">
               <p>ชาวต่างชาติที่ทำงานในไทย</p>
-              <input class="moreTwo" type="checkbox" id="q5_c3" name="q5[]" onClick="just2_q5();" value="ชาวต่างชาติที่ทำงานในไทย" >
+              <input class="moreTwo" type="checkbox" id="q5_c3" name="q5[]" onClick="just2_q5();" value="ชาวต่างชาติที่ทำงานในไทย">
               <span class="checkmark"></span>
             </label>
             <label class="container">
               <p>นักท่องเที่ยวชาวต่างชาติ</p>
-              <input class="moreTwo" type="checkbox" id="q5_c4" name="q5[]" onClick="just2_q5();" value="นักท่องเที่ยวชาวต่างชาติ" >
+              <input class="moreTwo" type="checkbox" id="q5_c4" name="q5[]" onClick="just2_q5();" value="นักท่องเที่ยวชาวต่างชาติ">
               <span class="checkmark"></span>
             </label>
             <label class="container">
               <p>นักเรียน/นิสิต-นักศึกษา</p>
-              <input class="moreTwo" type="checkbox" id="q5_c5" name="q5[]" onClick="just2_q5();" value="นักเรียน/นิสิต-นักศึกษา" >
+              <input class="moreTwo" type="checkbox" id="q5_c5" name="q5[]" onClick="just2_q5();" value="นักเรียน/นิสิต-นักศึกษา">
               <span class="checkmark"></span>
             </label>
             <label class="container">
               <p>ไม่สามารถแยกประเภทลูกค้า เนื่องจากยังไม่เคยเก็บข้อมูล</p>
-              <input class="moreTwo" type="checkbox" id="q5_c6" name="q5[]" onClick="just2_q5();" value="ไม่สามารถแยกประเภทลูกค้า เนื่องจากยังไม่เคยเก็บข้อมูล" >
+              <input class="moreTwo" type="checkbox" id="q5_c6" name="q5[]" onClick="just2_q5();" value="ไม่สามารถแยกประเภทลูกค้า เนื่องจากยังไม่เคยเก็บข้อมูล">
               <span class="checkmark"></span>
             </label>
-            
+
           </div>
           <!-- End Q5. -->
 
@@ -221,26 +221,26 @@
           <div class="card-body">
             <label class="container">
               <p>เงินสด</p>
-              <input class="moreTwo" type="checkbox" id="q6_c1" name="q6[]" onClick="just2_q6();" value="เงินสด" >
+              <input class="moreTwo" type="checkbox" id="q6_c1" name="q6[]" onClick="just2_q6();" value="เงินสด">
               <span class="checkmark"></span>
             </label>
             <label class="container">
               <p>โอนเงินผ่านมือถือ/อินเทอร์เน็ตแบงค์กิ้ง/พร้อมเพย์</p>
-              <input class="moreTwo" type="checkbox" id="q6_c2" name="q6[]" onClick="just2_q6();" value="โอนเงินผ่านมือถือ/อินเทอร์เน็ตแบงค์กิ้ง/พร้อมเพย์" >
+              <input class="moreTwo" type="checkbox" id="q6_c2" name="q6[]" onClick="just2_q6();" value="โอนเงินผ่านมือถือ/อินเทอร์เน็ตแบงค์กิ้ง/พร้อมเพย์">
               <span class="checkmark"></span>
             </label>
             <label class="container">
               <p>บัตรเครดิตธนาคาร</p>
-              <input class="moreTwo" type="checkbox" id="q6_c3" name="q6[]" onClick="just2_q6();" value="บัตรเครดิตธนาคาร" >
+              <input class="moreTwo" type="checkbox" id="q6_c3" name="q6[]" onClick="just2_q6();" value="บัตรเครดิตธนาคาร">
               <span class="checkmark"></span>
             </label>
             <label class="container controls form-inline">
               <input class="moreTwo" type="checkbox" id="q6_c4" name="q6[]" onClick="just2_q6();" value="ตัดเครดิตเติมเงินกับแอปพลิเคชันของทางร้านเอง" onclick="Q6_C4()">
               <span class="checkmark"></span>
               <span class="label">ตัดเครดิตเติมเงินกับแอปพลิเคชันของทางร้านเอง (โปรดระบุชื่อแอปพลิเคชัน)</spanab>
-              <input type="text" class="form-control input-small" name="txt_q6_c4" id="txt_q6_c4" style="display:none">
+                <input type="text" class="form-control input-small" name="txt_q6_c4" id="txt_q6_c4" style="display:none">
             </label>
-           
+
           </div>
           <!-- End Q6. -->
 
@@ -253,22 +253,22 @@
           <div class="card-body">
             <label class="container">
               <p>โพสต์บนเพจเฟซบุ๊ก</p>
-              <input class="moreTwo" type="checkbox" id="q7_c1" name="q7[]" onClick="just2_q7();" value="โพสต์บนเพจเฟซบุ๊ก" >
+              <input class="moreTwo" type="checkbox" id="q7_c1" name="q7[]" onClick="just2_q7();" value="โพสต์บนเพจเฟซบุ๊ก">
               <span class="checkmark"></span>
             </label>
             <label class="container">
               <p>ส่งข้อความทางไลน์ให้ลูกค้ารายคน</p>
-              <input class="moreTwo" type="checkbox" id="q7_c2" name="q7[]" onClick="just2_q7();" value="ส่งข้อความทางไลน์ให้ลูกค้ารายคน" >
+              <input class="moreTwo" type="checkbox" id="q7_c2" name="q7[]" onClick="just2_q7();" value="ส่งข้อความทางไลน์ให้ลูกค้ารายคน">
               <span class="checkmark"></span>
             </label>
             <label class="container">
               <p>สร้างไลน์กลุ่มลูกค้า แล้วส่งทางไลน์กลุ่ม/บรอดแคสเป็นกลุ่ม</p>
-              <input class="moreTwo" type="checkbox" id="q7_c3" name="q7[]" onClick="just2_q7();" value="สร้างไลน์กลุ่มลูกค้า แล้วส่งทางไลน์กลุ่ม/บรอดแคสเป็นกลุ่ม" >
+              <input class="moreTwo" type="checkbox" id="q7_c3" name="q7[]" onClick="just2_q7();" value="สร้างไลน์กลุ่มลูกค้า แล้วส่งทางไลน์กลุ่ม/บรอดแคสเป็นกลุ่ม">
               <span class="checkmark"></span>
             </label>
             <label class="container">
               <p>โทรหาลูกค้าโดยตรง</p>
-              <input class="moreTwo" type="checkbox" id="q7_c4" name="q7[]" onClick="just2_q7();" value="โทรหาลูกค้าโดยตรง" >
+              <input class="moreTwo" type="checkbox" id="q7_c4" name="q7[]" onClick="just2_q7();" value="โทรหาลูกค้าโดยตรง">
               <span class="checkmark"></span>
             </label>
             <label class="container controls form-inline">
@@ -277,7 +277,7 @@
               <span class="label">ส่งข้อความผ่านแอปพลิชัน (โปรดระบุชื่อแอปพลิเคชัน)</span>
               <input type="text" class="form-control input-small" name="txt_q7_c5" id="txt_q7_c5" style="display:none">
             </label>
-           
+
           </div>
           <!-- End Q7. -->
 
@@ -290,17 +290,17 @@
           <div class="card-body">
             <label class="container">
               <p>นัดหมายล่วงหน้า</p>
-              <input class="moreTwo" type="checkbox" id="q8_c1" name="q8[]" onClick="just2_q8();" value="นัดหมายล่วงหน้า" >
+              <input class="moreTwo" type="checkbox" id="q8_c1" name="q8[]" onClick="just2_q8();" value="นัดหมายล่วงหน้า">
               <span class="checkmark"></span>
             </label>
             <label class="container">
               <p>วอล์คอิน/เข้าร้านมาโดยไม่ได้นัดหมายก่อน</p>
-              <input class="moreTwo" type="checkbox" id="q8_c2" name="q8[]" onClick="just2_q8();" value="วอล์คอิน/เข้าร้านมาโดยไม่ได้นัดหมายก่อน" >
+              <input class="moreTwo" type="checkbox" id="q8_c2" name="q8[]" onClick="just2_q8();" value="วอล์คอิน/เข้าร้านมาโดยไม่ได้นัดหมายก่อน">
               <span class="checkmark"></span>
             </label>
             <label class="container">
               <p>จองคิวด้วยระบบทิคเก็ต</p>
-              <input class="moreTwo" type="checkbox" id="q8_c3" name="q8[]" onClick="just2_q8();" value="จองคิวด้วยระบบทิคเก็ต" >
+              <input class="moreTwo" type="checkbox" id="q8_c3" name="q8[]" onClick="just2_q8();" value="จองคิวด้วยระบบทิคเก็ต">
               <span class="checkmark"></span>
             </label>
             <label class="container controls form-inline">
