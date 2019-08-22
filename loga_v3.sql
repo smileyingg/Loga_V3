@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 22, 2019 at 03:58 AM
+-- Generation Time: Aug 22, 2019 at 04:23 AM
 -- Server version: 10.3.15-MariaDB
 -- PHP Version: 7.3.6
 
@@ -1056,7 +1056,7 @@ CREATE TABLE `answers` (
   `detail_q6` varchar(100) DEFAULT NULL,
   `q7` varchar(200) NOT NULL,
   `detail_q7` varchar(100) DEFAULT NULL,
-  `detail_q7_2` varchar(100) NOT NULL,
+  `detail_q7_2` varchar(100) DEFAULT NULL,
   `q8` varchar(200) NOT NULL,
   `detail_q8` varchar(100) DEFAULT NULL,
   `email` varchar(200) NOT NULL,
