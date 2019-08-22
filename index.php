@@ -13,7 +13,7 @@
   <div class="container-fluid">
     <div class="col s12">
       <h4 style="text-align:center;">ร่วมทำแบบสำรวจเพียง 3 นาที ลุ้นรับของที่ระลึก</h4>
-      <h4 style="text-align:center;">สัมมนาเพื่อกิจการเกี่ยวกับธุรกิจความงาม</h4><br />
+      <h4 style="text-align:center;">เพื่อกิจการเกี่ยวกับธุรกิจความงาม</h4><br />
       <h5 style="margin-left:20px;">โปรดเลือกเพียงคำตอบที่ตรงกับสภาพกิจการท่านมากที่สุด เพียงคำตอบเดียว</h5>
       <div class="card">
 
