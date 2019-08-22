@@ -55,7 +55,8 @@ include('configdb.php');
         <td>ข้อ 6</td>
         <td>รายละเอียดข้อ 6</td>
         <td>ข้อ 7</td>
-        <td>รายละเอียดข้อ 7</td>
+        <td>รายละเอียดการส่งข้อความผ่านแอป</td>
+        <td>รายละเอียดการใช้สื่อโฆษณา</td>
         <td>ข้อ 8</td>
         <td>รายละเอียดข้อ 8</td>
         <td>Email</td>
@@ -80,6 +81,7 @@ include('configdb.php');
         echo "<td>" . $row["detail_q6"] .  "</td> ";
         echo "<td>" . $row["q7"] .  "</td> ";
         echo "<td>" . $row["detail_q7"] .  "</td> ";
+        echo "<td>" . $row["detail_q7_2"] .  "</td> ";
         echo "<td>" . $row["q8"] .  "</td> ";
         echo "<td>" . $row["detail_q8"] .  "</td> ";
         echo "<td>" . $row["email"] .  "</td> ";

@@ -257,13 +257,13 @@
               <span class="checkmark"></span>
             </label>
             <label class="container">
-              <p>ส่งข้อความทางไลน์ให้ลูกค้ารายคน</p>
-              <input class="moreTwo" type="checkbox" id="q7_c2" name="q7[]" onClick="just2_q7();" value="ส่งข้อความทางไลน์ให้ลูกค้ารายคน">
+              <p>ส่งข้อความทางไลน์</p>
+              <input class="moreTwo" type="checkbox" id="q7_c2" name="q7[]" onClick="just2_q7();" value="ส่งข้อความทางไลน์">
               <span class="checkmark"></span>
             </label>
             <label class="container">
-              <p>สร้างไลน์กลุ่มลูกค้า แล้วส่งทางไลน์กลุ่ม/บรอดแคสเป็นกลุ่ม</p>
-              <input class="moreTwo" type="checkbox" id="q7_c3" name="q7[]" onClick="just2_q7();" value="สร้างไลน์กลุ่มลูกค้า แล้วส่งทางไลน์กลุ่ม/บรอดแคสเป็นกลุ่ม">
+              <p>ใช้บริการไลน์แอด</p>
+              <input class="moreTwo" type="checkbox" id="q7_c3" name="q7[]" onClick="just2_q7();" value="ใช้บริการไลน์แอด">
               <span class="checkmark"></span>
             </label>
             <label class="container">
@@ -272,10 +272,16 @@
               <span class="checkmark"></span>
             </label>
             <label class="container controls form-inline">
-              <input class="moreTwo" type="checkbox" id="q7_c5" name="q7[]" value="ส่งข้อความผ่านแอปพลิชัน" onClick="just2_q7();">
+              <input class="moreTwo" type="checkbox" id="q7_c5" name="q7[]" value="ส่งข้อความ/ทำการตลาดผ่านแอปพลิเคชัน" onClick="just2_q7();">
               <span class="checkmark"></span>
-              <span class="label">ส่งข้อความผ่านแอปพลิชัน (โปรดระบุชื่อแอปพลิเคชัน)</span>
+              <span class="label">ส่งข้อความ/ทำการตลาดผ่านแอปพลิเคชัน (โปรดระบุชื่อแอปพลิเคชัน)</span>
               <input type="text" class="form-control input-small" name="txt_q7_c5" id="txt_q7_c5" style="display:none">
+            </label>
+            <label class="container controls form-inline">
+              <input class="moreTwo" type="checkbox" id="q7_c6" name="q7[]" value="ใช้สื่อโฆษณา" onClick="just2_q7();">
+              <span class="checkmark"></span>
+              <span class="label">ใช้สื่อโฆษณา (โปรดระบุประเภทสื่อ หรือชื่อสื่อที่ใช้)</span>
+              <input type="text" class="form-control input-small" name="txt_q7_c6" id="txt_q7_c6" style="display:none">
             </label>
 
           </div>

@@ -56,10 +56,11 @@ if (
   $another_Q4 = $_POST['txt_q4_c5'];
   $another_Q6 = $_POST['txt_q6_c4'];
   $another_Q7 = $_POST['txt_q7_c5'];
+  $another_Q7_2 = $_POST['txt_q7_c6'];
   $another_Q8 = $_POST['txt_q8_c4'];
   
-  $sql = "INSERT INTO answers (q1, detail_q1, q2, detail_q2, q3, q4, detail_q4, q5, q6, detail_q6, q7, detail_q7, q8, detail_q8 , email, tel) VALUES 
-('$q1', '$another_Q1', '$q2', '$another_Q2', '$q3', '$q4', '$another_Q4', '$q5', '$q6', '$another_Q6', '$q7', '$another_Q7', '$q8', '$another_Q8', '$q9_email', '$q9_telephone')";
+  $sql = "INSERT INTO answers (q1, detail_q1, q2, detail_q2, q3, q4, detail_q4, q5, q6, detail_q6, q7, detail_q7 , detail_q7_2, q8, detail_q8 , email, tel) VALUES 
+('$q1', '$another_Q1', '$q2', '$another_Q2', '$q3', '$q4', '$another_Q4', '$q5', '$q6', '$another_Q6', '$q7', '$another_Q7', '$another_Q7_2', '$q8', '$another_Q8', '$q9_email', '$q9_telephone')";
 
   $result = mysqli_query($conn, $sql);
 
@@ -71,5 +72,5 @@ if (
   }
   $conn->close();
 } else {
-  echo ('0');
+  echo ('ข้อมูลไม่เข้าดาต้าเบส');
 }

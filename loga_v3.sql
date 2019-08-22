@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Jul 31, 2019 at 07:02 AM
--- Server version: 5.7.26
--- PHP Version: 7.2.18
+-- Host: 127.0.0.1
+-- Generation Time: Aug 22, 2019 at 03:58 AM
+-- Server version: 10.3.15-MariaDB
+-- PHP Version: 7.3.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -28,15 +28,13 @@ SET time_zone = "+00:00";
 -- Table structure for table `amphur`
 --
 
-DROP TABLE IF EXISTS `amphur`;
-CREATE TABLE IF NOT EXISTS `amphur` (
-  `amphur_id` int(5) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `amphur` (
+  `amphur_id` int(5) NOT NULL,
   `amphur_code` varchar(4) COLLATE utf8_unicode_ci NOT NULL,
   `amphur_name` varchar(150) COLLATE utf8_unicode_ci NOT NULL,
   `postcode` varchar(5) COLLATE utf8_unicode_ci NOT NULL,
-  `province_id` int(5) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`amphur_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=999 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `province_id` int(5) NOT NULL DEFAULT 0
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `amphur`
@@ -1043,10 +1041,9 @@ INSERT INTO `amphur` (`amphur_id`, `amphur_code`, `amphur_name`, `postcode`, `pr
 -- Table structure for table `answers`
 --
 
-DROP TABLE IF EXISTS `answers`;
-CREATE TABLE IF NOT EXISTS `answers` (
-  `id` int(5) NOT NULL AUTO_INCREMENT,
-  `date_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+CREATE TABLE `answers` (
+  `id` int(5) NOT NULL,
+  `date_time` timestamp NOT NULL DEFAULT current_timestamp(),
   `q1` varchar(200) NOT NULL,
   `detail_q1` varchar(200) DEFAULT NULL,
   `q2` varchar(200) NOT NULL,
@@ -1059,11 +1056,11 @@ CREATE TABLE IF NOT EXISTS `answers` (
   `detail_q6` varchar(100) DEFAULT NULL,
   `q7` varchar(200) NOT NULL,
   `detail_q7` varchar(100) DEFAULT NULL,
+  `detail_q7_2` varchar(100) NOT NULL,
   `q8` varchar(200) NOT NULL,
   `detail_q8` varchar(100) DEFAULT NULL,
   `email` varchar(200) NOT NULL,
-  `tel` varchar(10) NOT NULL,
-  PRIMARY KEY (`id`)
+  `tel` varchar(10) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -1072,21 +1069,20 @@ CREATE TABLE IF NOT EXISTS `answers` (
 -- Table structure for table `member`
 --
 
-DROP TABLE IF EXISTS `member`;
-CREATE TABLE IF NOT EXISTS `member` (
-  `user_id` int(5) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `member` (
+  `user_id` int(5) NOT NULL,
   `username` varchar(100) NOT NULL,
   `pass` varchar(100) NOT NULL,
-  `status` varchar(100) NOT NULL DEFAULT 'admin',
-  PRIMARY KEY (`user_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+  `status` varchar(100) NOT NULL DEFAULT 'admin'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `member`
 --
 
 INSERT INTO `member` (`user_id`, `username`, `pass`, `status`) VALUES
-(1, 'sdiadmin', 'mis@Pass01', 'admin');
+(1, 'sdiadmin', 'mis@Pass01', 'admin'),
+(2, '1', '1', 'admin');
 
 -- --------------------------------------------------------
 
@@ -1094,13 +1090,11 @@ INSERT INTO `member` (`user_id`, `username`, `pass`, `status`) VALUES
 -- Table structure for table `province`
 --
 
-DROP TABLE IF EXISTS `province`;
-CREATE TABLE IF NOT EXISTS `province` (
-  `province_id` int(5) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `province` (
+  `province_id` int(5) NOT NULL,
   `province_code` varchar(2) COLLATE utf8_unicode_ci NOT NULL,
-  `province_name` varchar(150) COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`province_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=78 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `province_name` varchar(150) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `province`
@@ -1184,6 +1178,62 @@ INSERT INTO `province` (`province_id`, `province_code`, `province_name`) VALUES
 (75, '95', 'ยะลา   '),
 (76, '96', 'นราธิวาส   '),
 (77, '97', 'บึงกาฬ');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `amphur`
+--
+ALTER TABLE `amphur`
+  ADD PRIMARY KEY (`amphur_id`);
+
+--
+-- Indexes for table `answers`
+--
+ALTER TABLE `answers`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `member`
+--
+ALTER TABLE `member`
+  ADD PRIMARY KEY (`user_id`);
+
+--
+-- Indexes for table `province`
+--
+ALTER TABLE `province`
+  ADD PRIMARY KEY (`province_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `amphur`
+--
+ALTER TABLE `amphur`
+  MODIFY `amphur_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=999;
+
+--
+-- AUTO_INCREMENT for table `answers`
+--
+ALTER TABLE `answers`
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `member`
+--
+ALTER TABLE `member`
+  MODIFY `user_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `province`
+--
+ALTER TABLE `province`
+  MODIFY `province_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -236,6 +236,16 @@
       document.getElementById('txt_q7_c5').value = "";
       document.getElementById('txt_q7_c5').required = false;
     }
+    var ck = document.getElementById('q7_c6');
+    if (ck.checked == true) {
+      document.getElementById('txt_q7_c6').style.display = "";
+      document.getElementById('txt_q7_c6').focus();
+      document.getElementById('txt_q7_c6').required = true;
+    } else {
+      document.getElementById('txt_q7_c6').style.display = "none";
+      document.getElementById('txt_q7_c6').value = "";
+      document.getElementById('txt_q7_c6').required = false;
+    }
   }
 
   // End Q7
